@@ -1,0 +1,39 @@
+.search {
+  width: clamp(250px, 100%, 800px);
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  border-radius: var(--radius-big-element);
+  background-color: var(--bg-secondary);
+}
+.inputContainer {
+  display: flex;
+  border-radius: var(--radius-short-element);
+  margin-top: 0.5rem;
+}
+.input {
+  border: none;
+  border-radius: var(--radius-short-element) 0 0 var(--radius-short-element);
+  flex-grow: 1;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+.input:focus {
+  outline: var(--color-outline) 2px solid;
+}
+.inputBtn {
+  width: 50px;
+  background-color: var(--bg-btn);
+  border: none;
+  border-radius: 0 var(--radius-short-element) var(--radius-short-element) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+.inputBtn:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,6 @@
+.sticker {
+  width: clamp(250px, 80%, 380px);
+}
+.video {
+  width: 100%;
+}

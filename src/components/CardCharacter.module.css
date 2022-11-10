@@ -1,0 +1,44 @@
+.card {
+  box-shadow: var(--shadow-card);
+  padding: 0.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-medium-element);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+.containerImg {
+  display: flex;
+  aspect-ratio: 1/1;
+}
+.img {
+  border-radius: var(--radius-short-element);
+  width: 100%;
+}
+
+.name {
+  border-radius: var(--radius-short-element);
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nameDead {
+  background-color: var(--color-dead);
+  color: #fff;
+}
+.nameAlive {
+  background-color: var(--color-alive);
+}
+.nameUnknown {
+  background-color: var(--color-unknown);
+  color: #fff;
+}
+.status {
+  color: #515151;
+  text-align: center;
+}

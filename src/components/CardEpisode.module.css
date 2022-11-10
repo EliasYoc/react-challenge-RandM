@@ -1,0 +1,21 @@
+.episode {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-short-element);
+}
+.title {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.subtitleCard {
+  font-size: 0.8rem;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}

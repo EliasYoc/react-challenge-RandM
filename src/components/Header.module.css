@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--bg-secondary);
+  height: 50px;
+}
+.logo {
+  width: 200px;
+  position: relative;
+}
+.logo img {
+  width: 100%;
+}
