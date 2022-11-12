@@ -40,6 +40,10 @@ code {
   width: 10px;
   height: 10px;
 }
+.scroll {
+  scrollbar-width: 10px;
+  scrollbar-color: var(--bg-btn) transparent;
+}
 .scroll::-webkit-scrollbar-track {
   background-color: transparent;
 }

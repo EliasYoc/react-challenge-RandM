@@ -1,5 +1,5 @@
 .select {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-principal);
   border-radius: var(--radius-short-element);
   padding: 0.5em;
   font-size: 1rem;

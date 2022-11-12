@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: var(--bg-principal);
+  background-color: var(--bg-secondary);
   border-radius: var(--radius-big-element);
   box-shadow: var(--shadow-card);
   width: clamp(250px, 100%, 800px);

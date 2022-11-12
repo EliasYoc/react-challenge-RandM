@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--bg-principal);
+  background-color: var(--bg-secondary);
   box-shadow: var(--shadow-card);
   height: 56px;
   padding: 0 0.5rem;
