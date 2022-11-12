@@ -5,10 +5,12 @@
 }
 .recentList {
   background-color: var(--bg-principal);
+  border-radius: var(--radius-short-element);
   box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   position: absolute;
+  margin-top: 0.5rem;
   max-height: 400px;
   left: 0;
   right: 0;
