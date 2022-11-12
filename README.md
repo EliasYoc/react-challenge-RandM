@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La aplicación se presenta con el nombre de [rmorty](https://rmorty.netlify.app/
 
 ## Available Scripts
 
