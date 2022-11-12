@@ -1,6 +1,6 @@
 .list {
   width: clamp(250px, 100%, 700px);
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   gap: 0.5rem;
 }

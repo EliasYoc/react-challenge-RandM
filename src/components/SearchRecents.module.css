@@ -1,0 +1,31 @@
+.wrapRecents {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+.recentList {
+  background-color: var(--bg-principal);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-height: 400px;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.recent {
+  align-items: center;
+  color: currentColor;
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+
+  justify-content: space-between;
+}
+.recent:hover {
+  background-color: var(--bg-hover);
+}

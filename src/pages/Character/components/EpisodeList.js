@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { CharactersContext } from "../context/CharactersContext";
+import { CharactersContext } from "../../../context/CharactersContext";
 import CardEpisode from "./CardEpisode";
 import styles from "./EpisodeList.module.css";
 const EpisodeList = () => {
@@ -7,10 +7,8 @@ const EpisodeList = () => {
     useContext(CharactersContext);
   const [episodesId, setEpisodesId] = useState([]);
   const [loadingEpisodes, setLoadingEpisodes] = useState(true);
-  console.log(episodesId);
   useEffect(() => {
     if (characterInfo.episode) {
-      console.log("id");
       let ids = characterInfo.episode.map((episode) =>
         episode.split("/").at(-1)
       );
@@ -20,7 +18,6 @@ const EpisodeList = () => {
 
   useEffect(() => {
     if (episodesId.length > 0) {
-      console.log("fetch episodes");
       const getEpisodes = async () => {
         const res = await fetch(
           `https://rickandmortyapi.com/api/episode/${episodesId}`
@@ -34,7 +31,7 @@ const EpisodeList = () => {
   }, [episodesId, setEpisodes]);
   if (loadingEpisodes) return <p>Loading episodes</p>;
   return (
-    <section className={styles.list}>
+    <section className={`${styles.list} scroll`}>
       {episodes.map((episode) => (
         <CardEpisode
           key={episode.id}

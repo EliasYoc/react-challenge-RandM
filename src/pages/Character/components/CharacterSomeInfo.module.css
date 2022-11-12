@@ -1,9 +1,10 @@
 .someInfo {
   display: flex;
-  flex-direction: column;
   font-size: 1.2rem;
+  gap: 0.5rem;
 }
 .title {
+  min-width: 120px;
   font-size: 1rem;
   color: var(--color-secondary);
 }

@@ -5,6 +5,7 @@
   padding: 0.5rem;
   background-color: var(--bg-secondary);
   border-radius: var(--radius-short-element);
+  font-size: 0.8rem;
 }
 .title {
   font-size: 1rem;
@@ -13,7 +14,8 @@
   text-overflow: ellipsis;
 }
 .subtitleCard {
-  font-size: 0.8rem;
+  color: var(--color-secondary);
+  font-weight: bold;
 }
 .wrap {
   display: flex;

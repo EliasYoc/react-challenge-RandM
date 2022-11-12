@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import { CharactersContext } from "../../../context/CharactersContext";
 import CharacterSomeInfo from "./CharacterSomeInfo";
 import styles from "./CharacterDetails.module.css";
+import BtnAddFavorite from "../../../components/BtnAddFavorite";
 const CharacterDetails = () => {
   const params = useParams();
   const [characterLoading, setCharacterLoading] = useState(true);
   const { characterInfo, setCharacterInfo } = useContext(CharactersContext);
   useEffect(() => {
-    if (!characterInfo.name) {
-      console.log("controle");
+    if (characterInfo.id !== params.id) {
       const controller = new AbortController();
       const { signal } = controller;
       fetch(`https://rickandmortyapi.com/api/character/${params.id}`, {
@@ -25,23 +25,30 @@ const CharacterDetails = () => {
       };
     }
     setCharacterLoading(false);
-  }, [params.id, setCharacterInfo, characterInfo.name]);
-  console.log(characterLoading);
+  }, [params.id, setCharacterInfo, characterInfo.id]);
   const statusLower = characterInfo.status?.toLowerCase();
   if (characterLoading) return <p>Loading...</p>;
   return (
-    <section
-      className={`${styles.details} ${
-        statusLower === "alive" ? styles.statusAlive : ""
-      }${statusLower === "dead" ? styles.statusDead : ""}${
-        statusLower === "unknown" ? styles.statusUnknown : ""
-      }`}
-    >
+    <section className={`${styles.details} `}>
       <div className={styles.imgWrapper}>
         <img src={characterInfo.image} alt={characterInfo.name} />
+        <BtnAddFavorite
+          id={characterInfo.id}
+          characterName={characterInfo.name}
+          status={characterInfo.status}
+          image={characterInfo.image}
+        />
       </div>
       <article className={styles.container}>
-        <h2>{characterInfo.name}</h2>
+        <h2
+          className={`${styles.name} ${
+            statusLower === "alive" ? styles.statusAlive : ""
+          }${statusLower === "dead" ? styles.statusDead : ""}${
+            statusLower === "unknown" ? styles.statusUnknown : ""
+          }`}
+        >
+          {characterInfo.name}
+        </h2>
         <span
           className={`${styles.span} ${
             statusLower === "alive" ? styles.spanAlive : ""

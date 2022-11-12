@@ -1,6 +1,14 @@
 .header {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-principal);
+  box-shadow: var(--shadow-card);
   height: 50px;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 10;
 }
 .logo {
   width: 200px;
@@ -8,4 +16,17 @@
 }
 .logo img {
   width: 100%;
+}
+.btnFavorites {
+  background-color: var(--bg-btn);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-big-element);
+  border: none;
+}
+.btnFavorites:active {
+  transform: scale(0.9);
 }

@@ -12,6 +12,7 @@
   text-decoration: none;
 }
 .containerImg {
+  position: relative;
   display: flex;
   aspect-ratio: 1/1;
 }
@@ -26,6 +27,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  pointer-events: fill;
 }
 .nameDead {
   background-color: var(--color-dead);

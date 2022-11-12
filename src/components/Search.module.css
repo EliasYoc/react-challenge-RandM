@@ -1,17 +1,26 @@
 .search {
-  width: clamp(250px, 100%, 800px);
-}
-.label {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0.5rem;
-  border-radius: var(--radius-big-element);
+  gap: 0.5rem;
   background-color: var(--bg-secondary);
+  border-radius: var(--radius-big-element);
+  box-shadow: var(--shadow-card);
+  width: clamp(250px, 100%, 800px);
+  padding: 0.5rem;
+  position: relative;
 }
-.inputContainer {
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container {
   display: flex;
   border-radius: var(--radius-short-element);
   margin-top: 0.5rem;
+  position: relative;
+  z-index: 2;
 }
 .input {
   border: none;
@@ -36,4 +45,11 @@
 }
 .inputBtn:active {
   transform: scale(0.9);
+}
+.error {
+  background-color: crimson;
+  border-radius: var(--radius-short-element);
+  padding: 0.4rem;
+  color: #fff;
+  text-align: center;
 }

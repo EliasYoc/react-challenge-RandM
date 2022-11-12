@@ -1,0 +1,59 @@
+.favoritesWrap {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.619);
+  inset: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
+}
+.btnFavorites {
+  background-color: var(--bg-btn);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-big-element);
+  border: none;
+}
+.btnFavorites:active {
+  transform: scale(0.9);
+}
+.favorites {
+  width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+  overflow-y: scroll;
+}
+
+.favoritesTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.favoritesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.favoritesOpen {
+  transform: translateX(0);
+}
+.favoritesClose {
+  transform: translateX(100%);
+}
+.wrapOpen {
+  opacity: 1;
+  visibility: visible;
+}
+.wrapClose {
+  opacity: 0;
+  visibility: hidden;
+}

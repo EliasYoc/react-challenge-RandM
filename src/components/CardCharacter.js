@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CharactersContext } from "../context/CharactersContext";
+import BtnAddFavorite from "./BtnAddFavorite";
 import styles from "./CardCharacter.module.css";
 
 const CardCharacter = ({ name, id, status, image, allInfo }) => {
@@ -18,6 +19,12 @@ const CardCharacter = ({ name, id, status, image, allInfo }) => {
       <article className={styles.card}>
         <div className={styles.containerImg}>
           <img className={styles.img} src={image} alt={name} />
+          <BtnAddFavorite
+            id={id}
+            status={status}
+            image={image}
+            characterName={name}
+          />
         </div>
         <div>
           <h3

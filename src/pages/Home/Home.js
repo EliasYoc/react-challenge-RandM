@@ -8,14 +8,16 @@ import CharacterList from "../../components/CharacterList";
 
 const Home = () => {
   const { foundCharacter } = useContext(CharactersContext);
-  console.log(foundCharacter);
   return (
     <div className={styles.home}>
       <Search />
       {foundCharacter.length > 0 ? (
         <CharacterList />
       ) : (
-        <CanvasSticker sticker={happyMorty} />
+        <CanvasSticker
+          title="Busca los personajes de Rick & Morty"
+          video={happyMorty}
+        />
       )}
     </div>
   );

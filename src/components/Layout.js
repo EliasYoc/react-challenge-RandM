@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Favorites from "./Favorites";
 import Header from "./Header";
 
 const Layout = () => {
@@ -6,6 +7,7 @@ const Layout = () => {
     <>
       <Header />
       <Outlet />
+      <Favorites />
     </>
   );
 };
