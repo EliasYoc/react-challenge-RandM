@@ -4,7 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+`clonar el proyecto`
 
+```
+git clone https://github.com/EliasYoc/react-challenge-RandM.git
+```
 
 ### `npm start`
 
