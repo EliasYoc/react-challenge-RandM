@@ -27,6 +27,7 @@ const ConfigurationProvider = ({ children }) => {
     setConfiguration((prev) => ({ ...prev, showRecents: true }));
   };
   const handleFilterCharacters = (e, searchName) => {
+    setPageNumber(1);
     const queryCharacterName = searchParams.get("q");
     if (!queryCharacterName) setSearchParams(`q=${searchName}`);
 
