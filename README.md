@@ -16,4 +16,4 @@ git clone https://github.com/EliasYoc/react-challenge-RandM.git
 npm i
 ```
 
-## ``npm start``
+```npm start```
