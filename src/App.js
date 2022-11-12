@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Character from "./pages/Character/Character";
 import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/character/:id" element={<Character />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

@@ -6,9 +6,10 @@ import BtnDeleteRecent from "./BtnDeleteRecent";
 import styles from "./SearchRecents.module.css";
 const SearchRecents = () => {
   const { recentSearch } = useContext(CharactersContext);
-  const { setConfiguration } = useContext(ConfigurationContext);
+  const { setConfiguration, setPageNumber } = useContext(ConfigurationContext);
 
   const handleClick = (e) => {
+    setPageNumber(1);
     e.stopPropagation();
     setConfiguration((prev) => ({ ...prev, showRecents: false }));
   };

@@ -2,18 +2,10 @@ import { useContext } from "react";
 import { CharactersContext } from "../context/CharactersContext";
 import CardCharacter from "./CardCharacter";
 import styles from "./CharacterList.module.css";
-import ReactPaginate from "react-paginate";
-import { ConfigurationContext } from "../context/ConfigurationContext";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import Pagination from "./Pagination";
 const CharacterList = () => {
   const { foundCharacter } = useContext(CharactersContext);
-  const { homePaginationInfo, setPageNumber } =
-    useContext(ConfigurationContext);
-  const handleSelectPageNum = (obj) => {
-    const { selected } = obj;
-    const page = selected + 1;
-    setPageNumber(page);
-  };
+
   return (
     <>
       <section className={styles.list}>
@@ -28,7 +20,8 @@ const CharacterList = () => {
           />
         ))}
       </section>
-      <div className={styles.wrapperPag}>
+      <Pagination />
+      {/* <div className={styles.wrapperPag}>
         <ReactPaginate
           containerClassName={`${styles.pagination} scroll`}
           breakClassName={styles.ellipsis}
@@ -43,7 +36,7 @@ const CharacterList = () => {
           pageRangeDisplayed={3}
           renderOnZeroPageCount={null}
         />
-      </div>
+      </div> */}
     </>
   );
 };
