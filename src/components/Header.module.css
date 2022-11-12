@@ -1,7 +1,7 @@
 .header {
   background-color: var(--bg-principal);
   box-shadow: var(--shadow-card);
-  height: 50px;
+  height: 56px;
   padding: 0 0.5rem;
   display: flex;
   justify-content: space-between;

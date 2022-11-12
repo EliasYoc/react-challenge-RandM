@@ -27,10 +27,10 @@
   gap: 0.5rem;
 }
 .statusAlive {
-  background-color: rgb(236, 253, 211);
+  background-color: rgb(145, 218, 130);
 }
 .statusDead {
-  background-color: rgb(255, 167, 184);
+  background-color: rgb(223, 125, 145);
 }
 .statusUnknown {
   background-color: rgb(215, 215, 215);

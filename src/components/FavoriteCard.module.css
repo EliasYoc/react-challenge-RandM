@@ -9,6 +9,10 @@
   overflow: hidden;
   position: relative;
   box-shadow: var(--shadow-card);
+  transition: background 0.3s ease;
+}
+.favCard:hover {
+  background-color: var(--bg-hover);
 }
 .favCardWrap {
   border-radius: var(--radius-medium-element);

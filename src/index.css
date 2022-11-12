@@ -24,7 +24,7 @@ code {
 :root {
   --bg-principal: rgb(240, 255, 218);
   --bg-secondary: rgb(219, 250, 172);
-  --bg-btn: rgb(132, 216, 5);
+  --bg-btn: rgb(145, 218, 130);
   --color-secondary: rgb(72, 72, 72);
   --color-outline: rgb(163, 251, 32);
   --radius-big-element: 1.2rem;
@@ -34,7 +34,7 @@ code {
   --color-dead: rgb(255, 75, 111);
   --color-alive: rgb(71, 196, 58);
   --color-unknown: rgb(157, 157, 157);
-  --bg-hover: rgba(217, 217, 217, 0.328);
+  --bg-hover: rgba(22, 22, 22, 0.201);
 }
 .scroll::-webkit-scrollbar {
   width: 10px;
