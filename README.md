@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Challenge
 
-La aplicación se presenta con el nombre de [rmorty](https://rmorty.netlify.app/
+La aplicación se presenta con el nombre de [rmorty](https://rmorty.netlify.app/)
 
-## Available Scripts
+### `Instrucciones`
 
 `clonar el proyecto`
 
@@ -10,5 +10,10 @@ La aplicación se presenta con el nombre de [rmorty](https://rmorty.netlify.app/
 git clone https://github.com/EliasYoc/react-challenge-RandM.git
 ```
 
-### `npm start`
+ `Instalar las dependencias`
 
+```
+npm i
+```
+
+## ``npm start``
